@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Migra';
+    src: url('Migra-Extralight.eot');
+    src: url('Migra-Extralight.eot?#iefix') format('embedded-opentype'),
+        url('Migra-Extralight.woff2') format('woff2'),
+        url('Migra-Extralight.woff') format('woff'),
+        url('Migra-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+

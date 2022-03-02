@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="archives.css">
+
+</head>
+
+<body>
+    <section>
+        <p class="archive_header">
+            Archived Project
+        </p>
+        <div class="scene_wrapper">
+            <img src='../assets/cinema1.jpeg' class="scene_image image1" alt="image1" />
+            <img src='../assets/cinema2.jpeg' class="scene_image image2" alt="image2" />
+            <img src='../assets/cinema3.jpeg' class="scene_image image3" alt="image3" />
+            <img src='../assets/cinema4.jpeg' class="scene_image image4" alt="image4" />
+            <img src='../assets/cinema5.jpeg' class="scene_image image5" alt="image5" />
+
+            <ul class="scene_projects">
+                <li  id="project1" class="scene_project project1">
+                    <div>
+                        <span text-data="Lumiere Caché" class="span_project p1">
+                            Lumiere Caché
+                        </span>
+                        <span class="span_project_year">
+                            <ul>
+                                <li>2020</li>
+                            </ul>
+                        </span>
+                    </div>
+                </li>
+                <li id="project2" class="scene_project project2">
+                    <div>
+                        <span text-data="Eindhoven" class="span_project p2 " >
+                            Eindhoven
+                        </span>
+                        <span class="span_project_year">
+                            <ul>
+                                <li>2021</li>
+                            </ul>
+                        </span>
+                    </div>
+                </li>
+                <li id="project3" class="scene_project project3">
+                    <div>
+                        <span text-data="Restaurant" class="span_project p3 " >
+                            Restaurant
+                        </span>
+                        <span class="span_project_year">
+                            <ul>
+                                <li>2019</li>
+                            </ul>
+                        </span>
+                    </div>
+                </li>
+                <li  id="project4" class="scene_project project4">
+                    <div>
+                        <span text-data="Cinema" class="span_project p4">
+                            Cinema
+                        </span>
+                        <span class="span_project_year">
+                            <ul>
+                                <li>2021</li>
+                            </ul>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+         $(".p4").on( "mouseenter", function() {
+            $(".image1").attr('src','../assets/cinema1.jpeg');
+            $(".image2").attr('src','../assets/cinema2.jpeg');
+            $(".image3").attr('src','../assets/cinema3.jpeg');
+            $(".image4").attr('src','../assets/cinema4.jpeg');
+            $(".image5").attr('src','../assets/cinema5.jpeg');
+        });
+        $(".p2").on( "mouseenter", function() {
+            $(".image1").attr('src','../assets/P4-1.jpeg');
+            $(".image2").attr('src','../assets/P4-2.jpeg');
+            $(".image3").attr('src','../assets/P4-3.jpeg');
+            $(".image4").attr('src','../assets/P4-4.jpeg');
+            $(".image5").attr('src','../assets/P4-5.jpeg');
+        });
+        $(".p3").on( "mouseenter", function() {
+            $(".image1").attr('src','../assets/P3-1.jpeg');
+            $(".image2").attr('src','../assets/P3-2.jpeg');
+            $(".image3").attr('src','../assets/P3-3.jpeg');
+            $(".image4").attr('src','../assets/P3-4.jpeg');
+            $(".image5").attr('src','../assets/P3-5.jpeg');
+        });
+        $(".p1").on( "mouseenter", function() {
+            $(".image1").attr('src','../assets/P2-1.jpeg');
+            $(".image2").attr('src','../assets/P2-2.jpeg');
+            $(".image3").attr('src','../assets/P2-3.jpeg');
+            $(".image4").attr('src','../assets/P2-4.jpeg');
+            $(".image5").attr('src','../assets/P2-5.jpeg');
+        });
+       
+    </script>
+
+</body>
+</html>

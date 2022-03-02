@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>M.A.K</title>
+</head>
+
+<body>
+        <nav class="navbar">
+            <p>
+                <a href="#" class="nav_logo" >Ak</a>
+            </p>
+            <ul class="nav_actions">
+                <li class="nav_action">
+                    <a href="#section_two" class="nav_action_link">WORK.</a>
+                </li>
+                <li class="nav_action">
+                    <a href="#section_one" class="nav_action_link">ABOUT.</a>
+                </li>
+                <li class="nav_action">
+                    <a href="#section_four" class="nav_action_link">CONTACT.</a>
+                </li>
+            </ul>
+        </nav>
+
+
+    </section>
+    <section id="section_one">
+        <!-- <p class="salutation">HELLO THERE</p> -->
+        <p class="description" >
+            I’m KHIALI Mohamed Abdellah. A freelance full stack
+            Web Developper , from Algeria specialized in branding and styling
+        </p>  
+            <!-- <a class="button_explore" href="#">
+                explore more 
+            </a> -->
+    </section>
+    <section id="section_two">
+
+
+        <div style="display: flex; flex-direction: column; padding: 10px;" >
+            <div class="project_box"  id="box1" >
+                <div class="project_details" >
+                    <object data="assets/mobile.svg" class="project_img" > </object>
+                    <div class="project_info" >
+                        <p class="project_name" id="name1" >Centre de Recherches et Applications Psychologique</p>
+                        <p class="project_description" id="description1" >A Firm that communicates and test people and make the review to other companies . </p>
+                    </div>
+                </div>
+                <a href="archive.html/#project1">
+                    <img src="assets/plus.png" class="project_more"  >
+                </a>
+            </div>
+            <!-- <img src="assets/archive.jpeg" class="project_box_img" >  -->
+            
+        </div>
+
+        <div class="project_box" id="box2">
+            <div class="project_details" >
+                <object data="assets/web_development.svg" class="project_img" > </object>
+                <div class="project_info">
+                    <p class="project_name" id="name2" >Agence de voyage </p>
+                    <p class="project_description" id="description2"  >A trip agencies that prepares trips and events inside/outside the country  . </p>
+                </div>
+            </div>
+            <a href="/archive.html">
+                <img src="assets/plus.png" class="project_more"  >
+            </a>
+        </div>
+
+
+        <div class="project_box" id="box3">
+            <div class="project_details" >
+                <object data="assets/mobile_posts.svg" class="project_img" > </object>
+                <div class="project_info">
+                    <p class="project_name" id="name3" >E-commerce Clothe-Site</p>
+                    <p class="project_description" id="description3" >An online clothes shop . </p>
+                </div>
+            </div>
+            <a href="archive.html">
+                <img src="assets/plus.png" class="project_more"  >
+            </a>
+        </div>
+
+
+        <div class="project_box" id="box4">
+            <div class="project_details" >
+                <object data="assets/developer.svg" class="project_img" > </object>
+                <div class="project_info">
+                    <p class="project_name" id="name4" >Portfolio</p>
+                    <p class="project_description" id="description4" >Web Agency Portfolio </p>
+                </div>
+            </div>
+            <a href="archive.html">
+                <img src="assets/plus.png" class="project_more"  >
+            </a>
+        </div>
+
+
+    </section>
+
+
+    <section id="section_three">
+        <div class="archive_bg">
+            <p class="archive_header">
+                Archived Project
+            </p>
+            <p class="archive_subheader">
+                Explore my concepts and experiments for more work
+            </p>
+            <a href="/archive.html" class="archive_button">
+                Explore
+            </a>
+        </div>
+    </section>
+
+    <section id="section_four">
+        <marquee class="contact_message">
+            I'M ALWAYS HAPPY TO TALK.<br/>
+            AVAILABLE FOR FREELANCE WORK
+        </marquee>
+        <marquee class="contact_message">
+            I'M ALWAYS HAPPY TO TALK.<br/>
+            AVAILABLE FOR FREELANCE WORK
+        </marquee>
+        <marquee class="contact_message">
+            I'M ALWAYS HAPPY TO TALK.<br/>
+            AVAILABLE FOR FREELANCE WORK
+        </marquee>
+            <a href="#" class="contact_link">SEND ME AN EMAIL</a>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" ></script>
+
+    <script >
+
+        gsap.from('.salutation',{y:-0,duration:1.5,delay:0.5,opacity:0})
+        gsap.from('.description',{y:-0,duration:1.5,delay:0.5,opacity:0})
+        gsap.from('.button_explore',{y:-0,duration:1.5,delay:0.5,opacity:0})
+
+        gsap.from('#name1',{
+            scrollTrigger:{
+                trigger:'#box1',
+                start:'50px bottom',
+                toggleActions:'restart pause restart pause'
+            },
+            y:100,
+            duration:1,
+            opacity:0,
+        })
+        gsap.from('#description1',{
+            scrollTrigger:{
+                trigger:'#box1',
+                start:'50px bottom',
+                toggleActions:'restart pause restart pause'
+            },
+            y:100,
+            duration:1,
+            opacity:0,
+        })
+        gsap.from('#name2',{
+            scrollTrigger:{
+                trigger:'#box2',
+                start:'50px bottom',
+                toggleActions:'restart pause restart pause'
+            },
+            y:100,
+            duration:1,
+            opacity:0,
+        })
+        gsap.from('#description2',{
+            scrollTrigger:{
+                trigger:'#box2',
+                start:'50px bottom',
+                toggleActions:'restart pause restart pause'
+            },
+            y:100,
+            duration:1,
+            opacity:0,
+        })
+        gsap.from('#name3',{
+            scrollTrigger:{
+                trigger:'#box3',
+                start:'50px bottom',
+                toggleActions:'restart pause restart pause'
+            },
+            y:100,
+            duration:1,
+            opacity:0,
+        })
+        gsap.from('#description3',{
+            scrollTrigger:{
+                trigger:'#box3',
+                start:'50px bottom',
+                toggleActions:'restart pause restart pause'
+            },
+            y:100,
+            duration:1,
+            opacity:0,
+        })
+        gsap.from('#name4',{
+            scrollTrigger:{
+                trigger:'#box4',
+                start:'50px bottom',
+                toggleActions:'restart pause restart pause'
+            },
+            y:100,
+            duration:1,
+            opacity:0,
+        })
+        gsap.from('#description4',{
+            scrollTrigger:{
+                trigger:'#box4',
+                start:'50px bottom',
+                toggleActions:'restart pause restart pause'
+            },
+            y:100,
+            duration:1,
+            opacity:0,
+        })
+
+      
+
+
+    </script>
+</body>
+    
+</html>
